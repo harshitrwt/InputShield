@@ -1,26 +1,18 @@
 {
-  "name": "prod_voiceagent",
-  "version": "1.0.0",
-  "description": "Voice agent architecture: a browser client that streams audio over WebRTC (Web Real-Time Communication), a backend that mints short-lived session tokens, an agent runtime that orchestrates speech and tools safely, and generates post-call artifacts for downstream workflows.",
-  "main": "index.js",
+  "name": "inputshield-monorepo",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "turbo run test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/harshitrwt/Prod_voiceAgent.git"
+  "devDependencies": {
+    "turbo": "latest",
+    "prettier": "latest",
+    "typescript": "latest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
-  "bugs": {
-    "url": "https://github.com/harshitrwt/Prod_voiceAgent/issues"
-  },
-  "homepage": "https://github.com/harshitrwt/Prod_voiceAgent#readme",
-  "dependencies": {
-    "cors": "^2.8.6",
-    "dotenv": "^17.3.1",
-    "express": "^5.2.1"
-  }
+  "packageManager": "pnpm@9.15.0"
 }

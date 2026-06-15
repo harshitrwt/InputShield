@@ -1,0 +1,20 @@
+{
+  "name": "@inputshield/detectors",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@inputshield/types": "workspace:*",
+    "@inputshield/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@inputshield/typescript-config": "workspace:*",
+    "typescript": "latest"
+  }
+}

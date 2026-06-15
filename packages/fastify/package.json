@@ -1,0 +1,26 @@
+{
+  "name": "@inputshield/fastify",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@inputshield/types": "workspace:*",
+    "@inputshield/core": "workspace:*",
+    "@inputshield/detectors": "workspace:*",
+    "fastify-plugin": "^4.5.1"
+  },
+  "devDependencies": {
+    "@inputshield/typescript-config": "workspace:*",
+    "fastify": "^4.26.2",
+    "typescript": "latest"
+  },
+  "peerDependencies": {
+    "fastify": "^4.0.0"
+  }
+}

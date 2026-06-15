@@ -1,0 +1,19 @@
+{
+  "name": "demo-fastify",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch & node --watch dist/index.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "fastify": "^4.26.2",
+    "@inputshield/fastify": "workspace:*"
+  },
+  "devDependencies": {
+    "@inputshield/typescript-config": "workspace:*",
+    "typescript": "latest"
+  }
+}
